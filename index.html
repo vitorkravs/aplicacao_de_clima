@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Aplicação de clima</title>
+</head>
+<body>
+    <div class="container"><!--Início container-->
+        <div class="form"><!--Início form-->
+            <h3>Confira o clima de uma cidade:</h3>
+            <div class="form-input-container">
+                <input type="text" placeholder="Digite o nome da cidade" id="city-input">
+                <button id="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div><!--Fim form-->
+
+        <div id="weather-data"><!--Início weather data-->
+            <h2><i class="fa-solid fa-location-dot"></i></h2>
+            <span id="city">Maceio</span>
+            <img src="" alt="Bandeira do país" id="country">
+            <p id="temperature"><span>38</span>&deg;C</p>
+
+            <div id="description-container"><!--Início description container-->
+                <p id="description">Nublado</p>
+                <img src="" alt="Condições do tempo" id="weather-icon">
+            </div><!--Fim description container-->
+
+            <div id="details-container"><!--Início details container-->
+                <p id="umidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span>umidade</span>
+                </p>
+                
+                <p id="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <span>3km/h</span>
+                </p>
+            </div><!--Fim details container-->
+        </div><!--Fim weather data-->
+    </div><!--Fim container-->
+</body>
+</html>
